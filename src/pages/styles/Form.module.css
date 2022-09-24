@@ -1,0 +1,104 @@
+/* rgb(21, 21, 21) */
+/* rgb(32, 32, 32) */
+/* #5c7cfa */
+
+.textarea {
+  height: 100px;
+  width: 70%;
+  resize: none;
+}
+
+.platforms {
+  border: solid 1px red;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 450px;
+  top: 200px;
+}
+
+.btn1 {
+  background-color: transparent;
+  border: 0;
+  color: #5c7cfa;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+}
+
+.btn1:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 1100px;
+  /* border: solid 5px red; */
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 250px 700px;
+  gap: 150px;
+}
+
+.title {
+  position: absolute;
+  color: #fd7e14;
+  top: 10px;
+  left: 50%;
+}
+
+.container fieldset {
+  background-color: rgb(32, 32, 32);
+  margin-top: 20px;
+  text-transform: capitalize;
+  width: 300px;
+  text-align: center;
+  height: 510px;
+  border: #5c7cfa solid;
+  border-radius: 12px;
+}
+
+.container legend {
+  padding: 0 10px;
+}
+
+.btn {
+  background-color: transparent;
+  color: #fd7e14;
+  border: 0;
+  font-size: 50px;
+
+  position: absolute;
+  top: 540px;
+  left: 255px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.btnError {
+  background-color: transparent;
+  color: #c92a2a;
+  border: 0;
+  font-size: 50px;
+
+  position: absolute;
+  top: 560px;
+  left: 255px;
+  cursor: not-allowed;
+}
+
+.btnError:hover {
+  pointer-events: none;
+}
+
+.error {
+  color: #c92a2a;
+  font-size: 13px;
+  font-weight: 500;
+}
