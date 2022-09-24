@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={Landing} />
+        <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
         <Route path="/form" component={Form} />
         <Route path="/about" component={About} />
