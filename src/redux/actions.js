@@ -13,7 +13,7 @@ export const UPDATE_GAME = "UPDATE_GAME";
 export const DELETE_GAME = "DELETE_GAME";
 
 export const getVideogames = () => {
-  const url = "https://backgame.up.railway.app/videogames";
+  const url = "https://backend-videogames-production.up.railway.app/videogames";
   return async (dispatch) => {
     try {
       const response = await axios.get(url);
@@ -29,7 +29,7 @@ export const getVideogames = () => {
 };
 
 export function getGameByName(name) {
-  const url = `https://backgame.up.railway.app/videogames?name=${name}`;
+  const url = `https://backend-videogames-production.up.railway.app/videogames?name=${name}`;
   return async (dispatch) => {
     try {
       const response = await axios(url);
@@ -57,7 +57,7 @@ export function getGameByName(name) {
 }
 
 export const filterByGenre = (genre) => {
-  const url = "https://backgame.up.railway.app/videogames";
+  const url = "https://backend-videogames-production.up.railway.app/videogames";
   return async (dispatch) => {
     try {
       const response = await axios.get(url);
@@ -79,7 +79,7 @@ export const filterByGenre = (genre) => {
 };
 
 export const sortByName = (value) => {
-  const url = "https://backgame.up.railway.app/videogames";
+  const url = "https://backend-videogames-production.up.railway.app/videogames";
   return function (dispatch) {
     axios
       .get(url)
@@ -121,7 +121,7 @@ export const sortByName = (value) => {
 };
 
 export const sortByRating = (value) => {
-  const url = "https://backgame.up.railway.app/videogames";
+  const url = "https://backend-videogames-production.up.railway.app/videogames";
   return async (dispatch) => {
     try {
       const response = await axios.get(url);
@@ -145,7 +145,7 @@ export const sortByRating = (value) => {
 };
 
 export const filterByDb = () => {
-  const url = "https://backgame.up.railway.app/videogames";
+  const url = "https://backend-videogames-production.up.railway.app/videogames";
   return async (dispatch) => {
     try {
       const response = await axios.get(url);
@@ -168,7 +168,7 @@ export const filterByDb = () => {
 };
 
 export const filterByApi = () => {
-  const url = "https://backgame.up.railway.app/videogames";
+  const url = "https://backend-videogames-production.up.railway.app/videogames";
   return async (dispatch) => {
     try {
       const response = await axios.get(url);
@@ -187,7 +187,7 @@ export const filterByApi = () => {
 };
 
 export const getGameById = (id) => {
-  const url = `https://backgame.up.railway.app/videogames/${id}`;
+  const url = `https://backend-videogames-production.up.railway.app/videogames/${id}`;
   return function (dispatch) {
     axios
       .get(url)
@@ -203,7 +203,7 @@ export const getGameById = (id) => {
 };
 
 export const getGenres = () => {
-  const url = "https://backgame.up.railway.app/genres";
+  const url = "https://backend-videogames-production.up.railway.app/genres";
   return async (dispatch) => {
     try {
       const response = await axios.get(url);
@@ -219,7 +219,7 @@ export const getGenres = () => {
 };
 
 export const createGame = (obj) => {
-  const url = "https://backgame.up.railway.app/videogames";
+  const url = "https://backend-videogames-production.up.railway.app/videogames";
   return function (dispatch) {
     console.log(obj.name);
     axios
@@ -238,7 +238,7 @@ export const createGame = (obj) => {
 };
 
 export const updateVideogame = (id, obj) => {
-  const url = `https://backgame.up.railway.app/videogames/${id}`;
+  const url = `https://backend-videogames-production.up.railway.app/videogames/${id}`;
   const options = {
     method: "PUT",
     headers: { "Content-Type": "Application/json" },
@@ -255,7 +255,7 @@ export const updateVideogame = (id, obj) => {
 };
 
 export const deleteVideogame = (id) => {
-  const url = `https://backgame.up.railway.app/videogames/delete/${id}`;
+  const url = `https://backend-videogames-production.up.railway.app/videogames/delete/${id}`;
   return async function (dispatch) {
     const response = await axios.delete(url);
     console.log("this is", response.data);
