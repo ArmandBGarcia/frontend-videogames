@@ -1,0 +1,25 @@
+[
+  {
+    "id": 3498,
+    "name": "Grand Theft Auto V",
+    "released": "2013-09-17",
+    "background_image": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
+    "rating": 4.47,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action",
+        "games_count": 174857,
+        "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure",
+        "games_count": 134591,
+        "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+      }
+    ]
+  }
+]

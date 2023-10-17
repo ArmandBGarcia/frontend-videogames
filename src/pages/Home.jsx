@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 import { Paginated } from "../components/Paginated";
 import { getVideogames } from "../redux/actions";
 import s from "./styles/Home.module.css";
+import { videogames } from "../database/rawg";
 
 const Home = () => {
   const games = useSelector((state) => state.videogames);
@@ -22,27 +23,30 @@ const Home = () => {
       ? games.slice(indexOfFirstGame, indexOfLastGame)
       : [games];
 
-  const pagination = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+  const game = videogames.map((d) => {
+    return d.name;
+  });
+  console.log({ game });
+  // const pagination = (pageNumber) => {
+  //   setCurrentPage(pageNumber);
+  // };
 
-  useEffect(() => {
-    dispatch(getVideogames());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getVideogames());
+  // }, [dispatch]);
 
   // console.log(games);
   return (
     <div>
       <Navbar />
-      <Paginated
+      {/* <Paginated
         gamesPerPage={gamesPerPage}
         allGames={games.length}
         pagination={pagination}
-      />
+      /> */}
       <div className={s.container}>
         <Aside />
-        {games.length ? <Cards currentGames={currentGames} /> : <Loader />}
-        {/* <Loader /> */}
+        {/* {games.length ? <Cards currentGames={currentGames} /> : <Loader />} */}
       </div>
     </div>
   );

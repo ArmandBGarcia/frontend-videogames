@@ -23,16 +23,15 @@ const ContactForm = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_xn7cyqm",
+        "service_832oncc",
         "template_fduzfm9",
         e.target,
         "7wkI-pqxkp4uugnlP"
       )
-      .then((res) => {
-        if (res.status === 200) {
-          alert("Message sent successfully");
-        } else alert("Message not sent, something went wrong");
-      });
+      .then(() => {
+        alert("Message sent successfully");
+      })
+      .catch(() => alert("Message not sent, something went wrong"));
     setForm({
       name: "",
       email: "",
